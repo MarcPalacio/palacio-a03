@@ -41,8 +41,8 @@ public class Solution24 {
         //      set the return value to false
         // returns the return value (should be a true or false)
         boolean output = true;
-        List arrayList1 = sortArrayList(input1);
-        List arrayList2 = sortArrayList(input2);
+        ArrayList<Character> arrayList1 = formatArrayList(input1);
+        ArrayList<Character> arrayList2 = formatArrayList(input2);
         if(arrayList1.size() == arrayList2.size()){
             for(int i = 0; i < arrayList1.size()-1; i++){
                 if(arrayList1.get(i) != arrayList2.get(i)){
@@ -56,8 +56,8 @@ public class Solution24 {
         return output;
     }
 
-    public ArrayList<Character> sortArrayList(String input){
-        ArrayList<Character> output = new ArrayList<Character>();
+    public ArrayList<Character> formatArrayList(String input){
+        ArrayList<Character> output = new ArrayList<>();
         // Adds each character of the string into the arraylist
         // Sets chars all to lowercase
         // Sorts the arraylist
