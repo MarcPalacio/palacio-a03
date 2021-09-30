@@ -12,6 +12,7 @@ public class Solution24 {
         // Print statement asking for two strings
         // Calls askString that will return a String
         // Calls function isAnagram that will return true or false
+
     }
 
     public boolean isAnagram(String input1, String input2){
@@ -28,5 +29,13 @@ public class Solution24 {
     public String askString(String question){
         // Asks and return the user input (string)
         return "";
+    }
+
+    public ArrayList<Character> sortArrayList(String input){
+        ArrayList<Character> output = new ArrayList<Character>();
+        // Adds each character of the string into the arraylist
+        // Sorts the arraylist
+        // Returns arraylist
+        return output;
     }
 }
