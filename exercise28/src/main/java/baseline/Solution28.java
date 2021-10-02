@@ -35,10 +35,8 @@ public class Solution28 {
         do{
             invalidInput = false;
             try{
-                do{
-                    System.out.print(question);
-                    output = in.nextInt();
-                }while(output < 0);
+                System.out.print(question);
+                output = in.nextInt();
             }catch(InputMismatchException e){ // Checks the input to see if it is valid or not
                 invalidInput = true;
                 in.nextLine();
