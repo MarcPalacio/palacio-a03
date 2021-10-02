@@ -9,13 +9,15 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
 
 class Solution27Test {
-    private static String validateFName1 = "The first name must be at least 2 characters long.\n";
-    private static String validateFName2 = "The first name must be filled in.\n";
-    private static String validateLName1 = "The last name must be at least 2 characters long.\n";
-    private static String validateLName2 = "The last name must be filled in.\n";
-    private static String validateEID = "The employee ID must be in the format of AA-1234.\n";
-    private static String validateZipcode = "The zipcode must be a 5 digit number.\n";
-    private static String validInput = "There were no errors found.";
+    // This is so I don't have to copy and paste which validations are needed for which test case
+    // Also made sure they are final so they cannot be modified
+    private static final String validateFName1 = "The first name must be at least 2 characters long.\n";
+    private static final String validateFName2 = "The first name must be filled in.\n";
+    private static final String validateLName1 = "The last name must be at least 2 characters long.\n";
+    private static final String validateLName2 = "The last name must be filled in.\n";
+    private static final String validateEID = "The employee ID must be in the format of AA-1234.\n";
+    private static final String validateZipcode = "The zipcode must be a 5 digit number.\n";
+    private static final String validInput = "There were no errors found.";
 
     @Test
     public void testValidateInput1(){
