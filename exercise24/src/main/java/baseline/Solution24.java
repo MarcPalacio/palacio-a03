@@ -26,7 +26,7 @@ public class Solution24 {
         }
     }
 
-    public String askString(String question){
+    private String askString(String question){
         // Asks and return the user input (string)
         System.out.print(question);
         return in.nextLine();
