@@ -63,17 +63,16 @@ class Solution24Test {
         Solution24 app = new Solution24();
         String s1 = "Potato";
 
-        ArrayList<Character> list1 = new ArrayList<>();
-        list1.add('a');
-        list1.add('o');
-        list1.add('o');
-        list1.add('p');
-        list1.add('t');
-        list1.add('t');
-        list1.add('s');
-        ArrayList<Character> list2 = app.formatArrayList(s1);
+        ArrayList<Character> expected = new ArrayList<>();
+        expected.add('a');
+        expected.add('o');
+        expected.add('o');
+        expected.add('p');
+        expected.add('t');
+        expected.add('t');
+        ArrayList<Character> actual = app.formatArrayList(s1);
 
-        assertFalse(list1.equals(list2));
+        assertEquals(expected, actual);
     }
 
 
