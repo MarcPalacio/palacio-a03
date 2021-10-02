@@ -1,0 +1,9 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(îÔ«¾þÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(Ä‹Š×ùÿÿÿÿ
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(¢¨ˆú8Ÿ˜äÉÃ/
+U	java:S106D"9Replace this use of System.out or System.err by a logger.(Á™é•8‰þäÉÃ/
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(­¸þ®øÿÿÿÿ8èãåÉÃ/
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(†ôÀÖþÿÿÿÿ8ØæÉÃ/
+q
+java:S1192<"ODefine a constant instead of duplicating this literal "The password '" 5 times.(Ä‹Š×ùÿÿÿÿ8ŠþäÉÃ/

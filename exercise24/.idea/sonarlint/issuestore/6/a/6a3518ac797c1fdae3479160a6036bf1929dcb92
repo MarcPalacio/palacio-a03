@@ -1,0 +1,9 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(³¦ùúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ïìÛè
+N	java:S106"9Replace this use of System.out or System.err by a logger.(´ä‚ˆ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(îÔ«¾şÿÿÿÿ
+
+java:S1319;"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¨Ÿ†÷8 ¶ÛóÃ/
+Y
+java:S49730"<Strings and Boxed types should be compared using "equals()".(°ÂŞ8æ–¿½Ã/
