@@ -32,6 +32,7 @@ public class PaymentCalculator {
         // then the output would return -(1/30) * log(eq1) / log(1 + i)
         double dailyRate = (APR/100)/365;
         double eq1 = 1 + (balance/monthPay) * (1 - Math.pow((1 + dailyRate), 30));
+        System.out.println(eq1);
         int numMonths =  (int)Math.ceil((-1 * Math.log(eq1)) / (30*Math.log(1 + dailyRate)));
         return numMonths;
     }
