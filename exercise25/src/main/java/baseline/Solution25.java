@@ -19,7 +19,7 @@ public class Solution25 {
         solution.printOutput(password, pwStrength);
     }
 
-    public String askPassword(String question){
+    private String askPassword(String question){
         // Asks the user for a password (form of string) and returns it
         System.out.print(question);
         return in.nextLine();
@@ -52,7 +52,7 @@ public class Solution25 {
         return 0;
     }
 
-    public void printOutput(String password, int pwStrength){
+    private void printOutput(String password, int pwStrength){
         // Prints a statement depending on the password strength
         switch(pwStrength){
             case 1:
