@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  Copyright 2021 Marc Palacio
+ */
+
 package baseline;
 
 import java.util.*;
@@ -28,7 +33,7 @@ class Solution24Test {
     }
 
     @Test
-    public void testIsAnagram4(){
+    public void testIsAnagram3(){
         Solution24 app = new Solution24();
         String s1 = "Belli dura despicio";
         String s2 = "Belli dura despacito";
