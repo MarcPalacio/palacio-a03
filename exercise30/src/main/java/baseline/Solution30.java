@@ -32,9 +32,10 @@ public class Solution30 {
                     //      return i*j where the indent is only 4 spaces
                     string.append("    " + i*j);
                 }
-                // if the column equals 12
+                // if the column equals 12 and row does not equal 12
+                //      *This is to ensure that a new line doesn't get created at the end
                 //      add a new line to the output
-                if(j == 12){
+                if(j == 12 && i != 12){
                     string.append("\n");
                 }
             }
