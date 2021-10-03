@@ -7,26 +7,55 @@ package baseline;
 import java.util.*;
 
 public class Solution34 {
+    private static Scanner in = new Scanner(System.in);
     public static void main(String[] args){
+        Solution34 solution = new Solution34();
         // Create an array list of employees
+        ArrayList<String> listEmployees = new ArrayList<>();
+        listEmployees.add("John Smith");
+        listEmployees.add("Jackie Johnson");
+        listEmployees.add("Chris Jones");
+        listEmployees.add("Amanda Cullen");
+        listEmployees.add("Jeremy Goodwin");
+
         // Print out arraylist of employees
+        System.out.println("There are " + listEmployees.size() + " employees:");
+        for(int i = 0; i < listEmployees.size(); i++){
+            System.out.println(listEmployees.get(i));
+        }
+        System.out.println();
+
         // calls askName which stores the string of the name the user wants to remove from list
+        String remove = solution.askName("Enter a employee name to remove: ");
+
         // calls removeName which takes in the list of employees and name of the employee to remove
+        ArrayList<String> newListEmployees = solution.removeName(listEmployees, remove);
+
         // prints out the new list of employees
+        System.out.println();
+        System.out.println("There are " + newListEmployees.size() + " employees:");
+        for(int i = 0; i < newListEmployees.size(); i++){
+            System.out.println(newListEmployees.get(i));
+        }
     }
 
     private String askName(String question){
         // Asks the user a question (in this case, which employee to remove from the list)
         // Then returns that name
-        return "";
+        System.out.print(question);
+        return in.nextLine();
     }
 
     public ArrayList<String> removeName(ArrayList<String> list, String name){
-        ArrayList<String> output = list;
         // Run through the list of employees
-        // if employee at the current index equals the name of the employee to remove
-        //      remove that name
+        for(int i = 0; i < list.size(); i++){
+            // if employee at the current index equals the name of the employee to remove
+            if(list.get(i).equals(name)){
+                // remove that name
+                list.remove(i);
+            }
+        }
         // return the new arrayList
-        return output;
+        return list;
     }
 }
