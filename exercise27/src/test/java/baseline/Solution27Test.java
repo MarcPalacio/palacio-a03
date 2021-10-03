@@ -25,8 +25,13 @@ class Solution27Test {
         Solution27Test solution = new Solution27Test();
         String actual = app.validateInput("J", "", "ABCDE", "A12-1234");
 
-        String expected = solution.validateFName1 + solution.validateLName1 + solution.validateLName2 +
-                solution.validateEID + solution.validateZipcode;
+        StringBuilder string = new StringBuilder();
+        string.append(solution.validateFName1);
+        string.append(solution.validateLName1);
+        string.append(solution.validateLName2);
+        string.append(solution.validateEID);
+        string.append(solution.validateZipcode);
+        String expected = string.toString();
 
         assertEquals(expected, actual);
     }
@@ -35,7 +40,7 @@ class Solution27Test {
     public void testValidateInput2(){
         Solution27 app = new Solution27();
         Solution27Test solution = new Solution27Test();
-        String actual = app.validateInput("Marc", "Palacio", "32817", "DB-0316");
+        String actual = app.validateInput("Marc", "Palacio", "12345", "DB-0316");
 
         String expected = solution.validInput;
 
@@ -48,8 +53,14 @@ class Solution27Test {
         Solution27Test solution = new Solution27Test();
         String actual = app.validateInput("", "", "ABCDE", "A12-1234");
 
-        String expected = solution.validateFName1 + solution.validateFName2 + solution.validateLName1
-                + solution.validateLName2 + solution.validateEID + solution.validateZipcode;
+        StringBuilder string = new StringBuilder();
+        string.append(solution.validateFName1);
+        string.append(solution.validateFName2);
+        string.append(solution.validateLName1);
+        string.append(solution.validateLName2);
+        string.append(solution.validateEID);
+        string.append(solution.validateZipcode);
+        String expected = string.toString();
 
         assertEquals(expected, actual);
     }
@@ -60,7 +71,10 @@ class Solution27Test {
         Solution27Test solution = new Solution27Test();
         String actual = app.validateInput("Marc", "Palacio", "ABCDE", "A12-1234");
 
-        String expected = solution.validateEID + solution.validateZipcode;
+        StringBuilder string = new StringBuilder();
+        string.append(solution.validateEID);
+        string.append(solution.validateZipcode);
+        String expected = string.toString();
 
         assertEquals(expected, actual);
     }
@@ -69,10 +83,14 @@ class Solution27Test {
     public void testValidateInput5(){
         Solution27 app = new Solution27();
         Solution27Test solution = new Solution27Test();
-        String actual = app.validateInput("", "", "32817", "DB-0316");
+        String actual = app.validateInput("", "", "12345", "DB-0316");
 
-        String expected = solution.validateFName1 + solution.validateFName2 + solution.validateLName1
-                + solution.validateLName2;
+        StringBuilder string = new StringBuilder();
+        string.append(solution.validateFName1);
+        string.append(solution.validateFName2);
+        string.append(solution.validateLName1);
+        string.append(solution.validateLName2);
+        String expected = string.toString();
 
         assertEquals(expected, actual);
     }
