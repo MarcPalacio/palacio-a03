@@ -17,7 +17,9 @@ public class Solution33 {
         listAnswer.add("Maybe.");
         listAnswer.add("Ask again later.");
 
-        // Calls askQuestion to store question
+        // Calls askQuestion to get a question
+        // Since you aren't doing anything with the question
+        // askQuestion will be a void
         solution.askQuestion("What's your question?\n > ");
         // Calls randomNum to get a number to get an answer from the arrayList of answers
         int answer = solution.randomNum();
