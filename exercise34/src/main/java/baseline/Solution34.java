@@ -48,13 +48,13 @@ public class Solution34 {
 
     public ArrayList<String> removeName(ArrayList<String> list, String name){
         // Run through the list of employees
-        for(int i = 0; i < list.size(); i++){
-            // if employee at the current index equals the name of the employee to remove
-            if(list.get(i).equals(name)){
-                // remove that name
-                list.remove(i);
-            }
-        }
+        // if employee at the current index equals the name of the employee to remove
+        // remove that name
+
+        // Originally had the code go through all elements and remove each instance instead of the first instance
+        // In a case where two people have the same name, but you are only trying to remove one,
+        // .remove(name) can be used to ensure only one name is removed (though it should be specified at that point)
+        list.remove(name);
         // return the new arrayList
         return list;
     }
