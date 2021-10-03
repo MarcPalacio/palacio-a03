@@ -60,7 +60,7 @@ public class Solution32 {
         return in.next();
     }
 
-    public int verifyDiff(String question){
+    private int verifyDiff(String question){
         int diff = 0;
         // while the input does not equal a valid input (1-3 and also will run at least once)
         do{
@@ -76,7 +76,7 @@ public class Solution32 {
         return diff;
     }
 
-    public String verifyYNN(String question){
+    private String verifyYNN(String question){
         String playerChoice = "";
         // while the input does not equal a valid input (y/Y or n/N and also will run at least once)
         do{
@@ -94,7 +94,8 @@ public class Solution32 {
 
     public void playGame(int difficulty){
         // choose a number based on the difficulty the player has chosen
-        int answer = chooseNumber(difficulty);
+        Random rand = new Random();
+        int answer = rand.nextInt(getRange(difficulty)) + 1;
         int playerAnswer = 0;
         int guesses = 0;
 
@@ -138,22 +139,21 @@ public class Solution32 {
         }while(playerAnswer != answer);
     }
 
-    private int chooseNumber(int difficulty){
+    public int getRange(int difficulty){
         int output = 0;
-        Random rand = new Random();
 
         if(difficulty == 1){
             // if difficulty is equal to 1
             //      generate a number between 1-10
-            output = rand.nextInt(10) + 1;
+            output = 10;
         } else if(difficulty == 2){
             // else if difficulty is equal to 2
             //      generate a number between 1-100
-            output = rand.nextInt(100) + 1;
+            output = 100;
         }else if(difficulty == 3){
             // else if difficulty is equal to 3
             //      generate a number between 1-1000
-            output = rand.nextInt(1000) + 1;
+            output = 1000;
         }
 
         return output;
