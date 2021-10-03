@@ -122,7 +122,7 @@ public class Solution36 {
         string.append("The average is " + average + "\n");
         string.append("The minimum is " + min + "\n");
         string.append("The maximum is " + max + "\n");
-        string.append("The standard deviation is " + std + "\n");
+        string.append("The standard deviation is " + std);
 
         return string.toString();
     }
